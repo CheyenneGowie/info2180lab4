@@ -2,13 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Superheroes AJAX</title>
+    <title>Avengers Character Search</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Avengers Character Search</h1>
-    <button id="searchBtn">Search</button>
+    <!-- Full-width Header -->
+    <header>
+        <h1>AVENGERS CHARACTER SEARCH</h1>
+    </header>
+
+    <!-- Content with spacing from borders -->
+    <div class="content">
+        <!-- Search section -->
+        <section class="search-section">
+            <label for="searchInput">Search by Full Name or Alias:</label>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="e.g Captain America or Steve Rogers">
+                <button id="searchBtn">Search</button>
+            </div>
+        </section>
+
+        <!-- Result section -->
+        <section class="result-section">
+            <h2>RESULT</h2>
+            <hr>
+            <div id="result"></div>
+        </section>
+    </div>
 
     <script src="app.js"></script>
 </body>
 </html>
+

@@ -1,15 +1,102 @@
+
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
-h1 {
-    color: #333;
+
+header {
+    width: 100%;
+    background-color: skyblue;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-button {
-    padding: 10px 20px;
+/* Content spacing from edges */
+.content {
+    padding: 80px 300px; 
+}
+
+/* Search section */
+.search-section {
+    margin-bottom: 70px; 
+}
+
+.search-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    max-width: 600px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
     font-size: 16px;
+}
+
+.search-box button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
 
+.search-box button:hover {
+    background-color: darkred;
+}
+
+/* Result section */
+.result-section h2 {
+    margin-top: 0;
+}
+
+.result-section hr {
+    border: 0;
+    border-top: 2px solid #000;
+    margin-bottom: 15px;
+}
+
+#result {
+    color: black;
+    font-size: 16px;
+}
+
+/* Superhero result styling */
+#result h3, #result h4 {
+    text-transform: uppercase; 
+    margin: 5px 0;
+}
+
+#result p {
+    color: black; 
+    margin-left: 20px; 
+}
+
+/* Not found message */
+#result p.not-found {
+    color: red;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+/* For list of superheroes */
+#result ul {
+    padding-left: 20px;
+}
+
+#result ul li {
+    margin-bottom: 5px;
+}
